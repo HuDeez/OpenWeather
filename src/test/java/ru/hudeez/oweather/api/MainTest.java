@@ -11,7 +11,6 @@ import static ru.hudeez.oweather.api.settings.Units.METRIC;
 public class MainTest {
     @Test
     public void TestMain() {
-        // TODO: Enter your token
         WeatherClient client = new WeatherClient("YOUR TOKEN");
         CurrenWeatherAPI currenWeatherAPI = client.getCurrentWeatherAPI("Moscow", METRIC, RU);
         City city = currenWeatherAPI.getCity();
